@@ -412,8 +412,8 @@ public final class DigitalTwinsClient {
      * @param digitalTwinId The Id of the digital twin to get the component from.
      * @param componentPath The path of the component on the digital twin to retrieve.
      * @param clazz The class to deserialize the application/json component into.
-     * @param context Additional context that is passed through the Http pipeline during the service call.
      * @param <T> The generic type to deserialize the component to.
+     * @param context Additional context that is passed through the Http pipeline during the service call.
      * @return A {@link DigitalTwinsResponse} containing the deserialized application/json object representing the component of the digital twin.
      */
     @ServiceMethod(returns = ReturnType.SINGLE)
@@ -440,6 +440,7 @@ public final class DigitalTwinsClient {
      * @param componentUpdateOperations The application json patch to apply to the component. See {@link com.azure.digitaltwins.core.util.UpdateOperationUtility} for building
      *                                  this argument.
      * @param requestOptions The optional parameters for this request.
+     * @param context Additional context that is passed through the Http pipeline during the service call.
      * @return The http response.
      */
     @ServiceMethod(returns = ReturnType.SINGLE)
